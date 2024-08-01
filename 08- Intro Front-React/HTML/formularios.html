@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: #f3f3f3;
+            color: black;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        button {
+            background-color: blue;
+            color: white;
+            padding: 8px;
+            border-radius: 6px;
+            border: none;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h2>Formulários</h2>
+
+    <div>
+        <form action="" method="get"> <!-- metodo get: valor que vai enviar para o backend  --> 
+            <div>
+                <label for="name">Nombre:</label>
+                <br>
+                <input type="text" id="name" name="name" required>
+            </div>
+            
+            <div>
+                <label for="email">Email:</label>
+                <br>
+                <input type="email" id="email" name="email">
+            </div>
+
+            <div>
+                <label for="msg">Mensagem:</label>
+                <br>
+                <textarea name="mensagem" id="msg"></textarea>
+            </div>
+            
+            <div>
+                <button onclick="enviar()">Enviar</button>
+            </div>
+    </div>
+
+
+</body>
+</html>
